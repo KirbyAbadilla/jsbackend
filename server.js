@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const MeetupController =  require('./src/controllers/meetup');
 const config = require('./config.js'); // remove .example from /server/config.js.example
 //const MongoDBUrl = 'mongodb://localhost:27017/meetupapi';
-const MongoDBUrl = 'mongodb://unicodeveloper:pote1142@ds235827.mlab.com:35827/meetup';
+const MongoDBUrl = 'mongodb://kirbyabadilla:kirby4199309@ds143262.mlab.com:43262/meetup';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
