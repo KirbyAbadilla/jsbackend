@@ -35,6 +35,10 @@ app.post('/api/meetups', MeetupController.create);
 app.get('/api/meetups/public', MeetupController.getPublicMeetups);
 app.get('/api/meetups/private', authCheck, MeetupController.getPrivateMeetups);
 
+app.get('/', (req, res) => {
+    return res.json({ message: "Welcome to the Meetups API" });
+});
+
 app.listen(process.env.PORT || 5000)
 console.log('Listening on localhost:3333');
  // Once started, connect to Mongo through Mongoose
